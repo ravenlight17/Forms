@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <form>
+          <div class="lbl-input-grps">
+            <label for="fn"> First Name</label>
+            <input type="text" id="fn" name="fn" required maxlength="10" />
+            <span></span>
+          </div>
+          <div class="lbl-input-grps">
+            <label for="ln">Last Name</label>
+            <input type="text" id="ln" name="ln" required maxlength="25" />
+          </div>
+
+          <div class="lbl-input-grps">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="lbl-input-grps">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" />
+          </div>
+
+          <div class="lbl-input-grps">
+            <label for="sup-list">What is this request related to?:</label>
+            <select name="sup-list" id="sup-list">
+              <option value="software">Software</option>
+              <option value="hardware">Hardware</option>
+              <option value="mobile">Mobile</option>
+              <option value="network">Network</option>
+            </select>
+          </div>
+          <div class="lbl-input-grps">
+            <label for="chkbx">
+              Check this box to Receive a copy your response
+              <input
+                type="checkbox"
+                id="chkbx"
+                name="chkbx"
+                value="chkbx"
+                required
+              />
+            </label>
+          </div>
+          <div class="lbl-input-grps">
+            <input
+              type="radio"
+              id="morning"
+              name="contact_morn"
+              value="morning"
+            />
+            <label for="html">Contact in the Morning (9am -11am EST)</label
+            ><br />
+            <input type="radio" id="css" name="fav_language" value="CSS" />
+            <label for="css">Contact in the Afternoon (12pm - 3pm EST) </label
+            ><br />
+            <input
+              type="radio"
+              id="javascript"
+              name="fav_language"
+              value="JavaScript"
+            />
+            <label for="javascript">Contact in the Evening (4pm-6pm EST)</label>
+          </div>
+          <div class="lbl-input-grps">
+            <textarea
+              id="cmts"
+              name="cmts"
+              rows="14"
+              cols="50"
+              required
+              maxlength="250"
+            ></textarea>
+          </div>
+          <div>
+            <button id="btn">Submit</button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
