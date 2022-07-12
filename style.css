@@ -105,9 +105,9 @@ button:focus-visible {
 .lbl-input-grps {
   flex-flow: row wrap;
   justify-content: start;
+  margin-bottom: 10px;
 }
 
 label {
   font-size: 1.3em;
 }
-
